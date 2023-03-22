@@ -7,12 +7,12 @@ Eu sou o Caio Vinicius, um aspirante a desenvolvedor full-stack.
 - **PHP** ✅ 
 - **CSS** ✅ 
 - **HTML** ✅ 
-- **JavaScript** 📚 (Aprendendo...)
+- **Python** 📚 (Aprendendo...)
 
 ## 🔍 Interesses
 
 - **Flutter**
-- **Python**
+- **JavaScript**
 - **GO Lang**
 - **Java**
 - **C**
