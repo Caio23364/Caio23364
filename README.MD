@@ -2,8 +2,12 @@
 
 Eu sou o Caio Vinicius, um aspirante a desenvolvedor full-stack.
 ## Principais projetos
-https://github.com/Caio23364/tunturso-bot (Python) (Uso de Webscraping,Uso da biblioteca do discord,raspagem e seleção de dados)
-https://github.com/Caio23364/Par-ou-impar-PHP (HTML e PHP) (Criação de cookies,estrutura simples de If, Uso de bootstrap)
+**Projeto tunturso-bot (Python)**
+- [Repositório GitHub](https://github.com/Caio23364/tunturso-bot)
+- Recursos utilizados: Webscraping, biblioteca do discord, raspagem e seleção de dados
+**Projeto Par-ou-impar-PHP (HTML e PHP)**
+- [Repositório GitHub](https://github.com/Caio23364/Par-ou-impar-PHP)
+- Recursos utilizados: Criação de cookies, estrutura simples de If, uso de Bootstrap
 ## 💻 Habilidades
 
 - **PHP** ✅ 
