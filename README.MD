@@ -1,8 +1,7 @@
 ## 👋 Olá, mundo!
 
 Eu sou o Caio Vinicius, um aspirante a desenvolvedor full-stack.
-## Principais projetos
-
+**Principais projetos**
 Tunturso-bot (Python)
 - [Repositório GitHub](https://github.com/Caio23364/tunturso-bot)
 - Recursos utilizados: Webscraping, biblioteca do discord, raspagem e seleção de dados
