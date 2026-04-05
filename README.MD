@@ -20,11 +20,11 @@ Aqui estão alguns dos meus principais projetos:
 - **CSS** ✅ 
 - **HTML** ✅ 
 - **Python** ✅
+- **JavaScript** ✅
 
 ## 🔍 Interesses
 
 - **Flutter**
-- **JavaScript**
 - **GO Lang**
 - **Java**
 - **C**
