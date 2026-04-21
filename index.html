@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Perfil Discord 3D interativo com status em tempo real, integração com Spotify e minigame escondido.">
+    <meta name="description" content="Visualize o perfil de caiow.dev">
     <meta name="keywords" content="Discord, Perfil, 3D, Interativo, Spotify, Lanyard, Web">
     <meta name="author" content="caiow">
     <meta name="theme-color" content="#0f172a">
     <meta property="og:title" content="Perfil Discord 3D - caiow">
-    <meta property="og:description" content="Perfil caiow.dev">
+    <meta property="og:description" content="Visualize o perfil de caiow.dev">
     <meta property="og:image" content="https://dcdn.dstn.to/profile/277097382729089028">
     <meta property="og:url" content="https://discord.dog/277097382729089028">
     <meta property="og:type" content="profile">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Perfil Discord 3D - caiow">
-    <meta name="twitter:description" content="Visualize meu status do Discord e Spotify em tempo real.">
+    <meta name="twitter:description" content="Perfil Discord 3D - caiow.">
     <meta name="twitter:image" content="https://dcdn.dstn.to/profile/277097382729089028">
     <title>caiow.dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -492,12 +492,12 @@
 
         async function fetchWithFallback(url) {
             try {
-                const response = await fetch(url);
+                const response = await fetch(url, { cache: 'no-store' });
                 if (!response.ok) throw new Error('Direct fetch failed');
                 return await response.json();
             } catch (err) {
                 const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
-                const proxyResponse = await fetch(proxyUrl);
+                const proxyResponse = await fetch(proxyUrl, { cache: 'no-store' });
                 if (!proxyResponse.ok) throw new Error('Proxy fetch failed');
                 return await proxyResponse.json();
             }
@@ -505,10 +505,11 @@
 
         async function updateProfile() {
             try {
+                const ts = Date.now();
                 const [json, nowPlayingJson, dcdnData] = await Promise.all([
-                    fetchWithFallback(API_URL),
-                    fetchWithFallback(NOW_PLAYING_URL).catch(() => null),
-                    fetchWithFallback(`https://dcdn.dstn.to/profile/${USER_ID}`).catch(() => null)
+                    fetchWithFallback(`${API_URL}?_t=${ts}`),
+                    fetchWithFallback(`${NOW_PLAYING_URL}&_t=${ts}`).catch(() => null),
+                    fetchWithFallback(`https://dcdn.dstn.to/profile/${USER_ID}?_t=${ts}`).catch(() => null)
                 ]);
                 
                 if (!json || !json.success) return;
@@ -685,7 +686,7 @@
                     } else if (nowPlayingJson.songUri) {
                         try {
                             const oembedUrl = `https://open.spotify.com/oembed?url=${nowPlayingJson.songUri}`;
-                            const oembedData = await fetchWithFallback(oembedUrl);
+                            const oembedData = await fetchWithFallback(`${oembedUrl}&_t=${ts}`);
                             if (oembedData && oembedData.thumbnail_url) {
                                 albumArtUrl = oembedData.thumbnail_url;
                             }
@@ -702,7 +703,7 @@
                 const trackIdentifier = `${songName} ${artistName}`;
                 if (isPlayingMusic && trackIdentifier !== currentTrackId) {
                     currentTrackId = trackIdentifier;
-                    fetchWithFallback(`https://itunes.apple.com/search?term=${encodeURIComponent(trackIdentifier)}&media=music&limit=1`)
+                    fetchWithFallback(`https://itunes.apple.com/search?term=${encodeURIComponent(trackIdentifier)}&media=music&limit=1&_t=${ts}`)
                         .then(itunesData => {
                             if (currentTrackId === trackIdentifier && itunesData && itunesData.results && itunesData.results.length > 0) {
                                 audioPlayer.src = itunesData.results[0].previewUrl;
