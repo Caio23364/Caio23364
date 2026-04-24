@@ -1,47 +1,77 @@
-### 👋 Olá, mundo!
+# 🚀 Hello, World!
 
-Eu sou Caio Vinicius, um aspirante a desenvolvedor full-stack.
+<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px">  
 
-## Principais projetos
+I'm **Caio Vinicius**, an aspiring **Full-Stack Developer** passionate about building practical and creative solutions.
 
-Aqui estão alguns dos meus principais projetos:
+---
 
-**Tunturso-bot** (Python)
-- [Repositório GitHub](https://github.com/Caio23364/tunturso-bot)
-- Recursos utilizados: Webscraping, biblioteca do Discord, raspagem e seleção de dados.
+## 🧩 Featured Projects
 
-**Par-ou-impar-PHP** (HTML e PHP)
-- [Repositório GitHub](https://github.com/Caio23364/Par-ou-impar-PHP)
-- Recursos utilizados: Criação de cookies, estrutura simples de condicionais (If), uso de Bootstrap.
+Here are some of the projects I’ve been working on:
 
-## 💻 Habilidades
+### 🤖 Tunturso Bot *(Python)*
 
-- **PHP** ✅ 
-- **CSS** ✅ 
-- **HTML** ✅ 
-- **Python** ✅
-- **JavaScript** ✅
+🔗 https://github.com/Caio23364/tunturso-bot
+**Highlights:**
 
-## 🔍 Interesses
+* 🌐 Web scraping & data extraction
+* 🤝 Discord API integration
+* 📊 Smart data filtering & selection
 
-- **Flutter**
-- **GO Lang**
-- **Java**
-- **C**
-- **C#**
-- **C++**
+---
 
-## 🚀 Sobre mim
+### 🎮 Par ou Ímpar *(PHP + HTML)*
 
-- Estou sempre em busca de aprimorar minhas habilidades e aprender novas tecnologias.
-- Valorizo o feedback e as sugestões.
-- Acredito que juntos podemos criar soluções incríveis que podem ajudar as pessoas e transformar o mundo em um lugar melhor.
+🔗 https://github.com/Caio23364/Par-ou-impar-PHP
+**Highlights:**
 
-## 📂 Github
+* 🍪 Cookie handling
+* ⚙️ Conditional logic (if statements)
+* 🎨 Responsive UI with Bootstrap
 
-- Neste perfil, você encontrará uma variedade de projetos que trabalhei, incluindo desenvolvimento front-end e back-end, scripts e outras soluções tecnológicas.
-- Sinta-se à vontade para explorar, clonar e contribuir para qualquer um desses projetos. 
+---
 
-## 🙏 Agradecimento
+## 💻 Tech Stack
 
-Obrigado por visitar o meu Github! Se você tiver alguma sugestão ou feedback para mim, por favor, entre em contato. Vamos juntos construir soluções incríveis!
+```text
+✔ PHP        ✔ CSS        ✔ HTML  
+✔ Python     ✔ JavaScript
+```
+
+---
+
+## 🔍 Currently Exploring
+
+* 📱 Flutter
+* ⚡ Go (Golang)
+* ☕ Java
+* 🔧 C / C# / C++
+
+---
+
+## 🌱 About Me
+
+* 🚀 Constantly improving my skills and learning new technologies
+* 💬 Open to feedback, ideas, and collaboration
+* 🌍 Driven by the belief that technology can make the world better
+
+---
+
+## 📂 GitHub Journey
+
+On this profile, you’ll find:
+
+* 🌐 Front-end & back-end projects
+* 🧪 Experiments and scripts
+* 💡 Ideas turned into code
+
+Feel free to **explore, fork, and contribute**!
+
+---
+
+## 🙌 Thanks for Visiting!
+
+If you have suggestions, feedback, or just want to connect:
+
+✨ *Let’s build something amazing together.* ✨
